@@ -12,7 +12,7 @@ def About():
     st.caption("and prediction of the brain stroke occurrance")
     st.title("Stroke is the condition in which the blood supply to the brain is cut")
     st.write("due to blood clot (ischemic stroke) or bursting the blood vessels reaching the brain (hemorrhagic stroke)")
-    st.caption("transient ischaemic attack")
+    st.caption("Transient ischaemic attack")
     st.write("it is a mini_stroke that can persist for 24 hours")
     st.write(" and it is a related condition that happens due to temperory interuption of blood supply to the brain")
     st.caption("Certain conditions increase the risk of having a stroke, including:")
@@ -26,7 +26,7 @@ def About():
 
 def Bain_stroke_EDA():
     col1, col2 = st.columns(2)
-    brain= pd.read_csv("D:/brain_stroke.csv")
+    brain= pd.read_csv("brain_stroke.csv")
     num_cat_vars=brain.groupby("stroke").mean()
 #gender
     stroke_gender=brain.groupby("gender")["stroke"].mean()
