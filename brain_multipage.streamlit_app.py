@@ -274,7 +274,6 @@ def stroke_prediction():
     st.sidebar.markdown("#stroke_prediction📈")
     clf1 = joblib.load('clf1')
     processor=joblib.load("processor")
-    brain= pd.read_csv("D:/brain_stroke.csv")
     st.title("Prediction of brain occurrance")
     st.caption("About the app")
     st.write("""Simple approach of prediction of brain stroke based on some life style features""")
