@@ -277,7 +277,7 @@ def stroke_prediction():
     st.title("Prediction of brain occurrance")
     st.caption("About the app")
     st.write("""Simple approach of prediction of brain stroke based on some life style features""")
-
+    brain= pd.read_csv("brain_stroke.csv")
     age= st.slider("age",brain["age"].min(), brain["age"].max())
     bmi= st.slider("bmi",brain["bmi"].min(), brain["bmi"].max())
     avg_glucose_level=st.slider("avg_glucose_level",brain["avg_glucose_level"].min(), brain["avg_glucose_level"].max())
