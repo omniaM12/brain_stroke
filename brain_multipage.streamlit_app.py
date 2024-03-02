@@ -60,7 +60,7 @@ def Bain_stroke_EDA():
     heart_disease_bmi = pd.DataFrame({'heart_disease':heart_disease_bmi.index, 'bmi':heart_disease_bmi.values})
 #heart dis uni
     heart_disease_count=brain["heart_disease"].value_counts()
-    heart_disease_count = pd.DataFrame({'heart disease':heart_disease_count.index, 'number':heart_disease_count.values})
+    heart_disease_count = pd.DataFrame({'heart_disease':heart_disease_count.index, 'number':heart_disease_count.values})
 #ever_married_count
     ever_married_count=brain["ever_married"].value_counts()
     ever_married_count=pd.DataFrame({'ever_married':ever_married_count.index, 'number':ever_married_count.values})
